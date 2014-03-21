@@ -1,26 +1,16 @@
 #!/usr/bin/python
-def listaNumeros():
-    numeros = range(1,101)
-    return numeros
-
-def multiplos3():           
-    listaM3 = [x for x in range(1,101) if x%3 == 0]
-    return listaM3
-
-def multiplos5():           
-    listaM5 = [x for x in range(1,101) if x%5 == 0]
-    return listaM5
-
-def multiploAmbos():           
-    listaAmbos = [x for x in range(1,101) if x%3 == 0 or x%5 == 0]
-    return listaAmbos
-
-numeros = listaNumeros()
-cantidadValores = len(numeros)
-print cantidadValores
-multiplos3 = multiplos3()
-cantidadValores = len(multiplos3)
-print cantidadValores
-print multiplos3
-multiplos5 = multiplos5()
-print multiplos5
+# -*- coding: utf-8 -*-
+numeros = [x for x in range(1,101)]
+for num in range(0,len(numeros)):
+	if (numeros[num] % 5 == 0) & (numeros[num]%3 == 0): #MÚLTIPLOS DE AMBOS
+		numeros[num] = "FlizzBuzz"
+		print "Los multiplos de ambos son :" , numeros[num]
+	elif (numeros[num] % 3 == 0): #MÚLTIPLOS DE 3
+		numeros[num] = "Flizz"
+		print "Los multiplos de 3 son: " , numeros[num]
+	elif (numeros[num] % 5 == 0): #MÚLTIPLOS DE 5
+		numeros[num] = "Buzz"
+		print "Los multiplos de 5 son: " , numeros[num]
+	else:
+		print numeros[num]
+print numeros[num]	
