@@ -15,4 +15,3 @@ for num in range(0,len(numeros)):
 		print "Los multiplos de 5 son: " , numeros[num]
 	else:
 		print numeros[num]
-print numeros[num]	
