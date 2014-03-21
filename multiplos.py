@@ -1,5 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+#Create by: Abraham Solórzano
+
 numeros = [x for x in range(1,101)]
 for num in range(0,len(numeros)):
 	if (numeros[num] % 5 == 0) & (numeros[num]%3 == 0): #MÚLTIPLOS DE AMBOS
